@@ -1,4 +1,4 @@
-# Reacte
+# REACT -> Ecommerce - https://kalles-5-2.myshopify.com/
 
 Projeto de estudo em React com gerenciamento de estado global via **Redux Toolkit**, listagem de produtos, carrinho e favoritos. A aplicação foi criada com [Create React App](https://github.com/facebook/create-react-app) e utiliza roteamento, formulários, requisições HTTP e múltiplas abordagens de estilização.
 
