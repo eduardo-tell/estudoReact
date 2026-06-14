@@ -1,20 +1,30 @@
 import styled from 'styled-components'
 
 export const ContentBody = styled.div`
-    height: 20rem;
+    aspect-ratio: 1/1;
+    position: relative;
+
+    &:hover {
+        .CardProductStyle__actions {
+            z-index: 10;
+            opacity: 1;
+        }
+    }
 `
 export const CardProductImage = styled.div`
-    height: 60%;
-    display: block;
-    overflow: hidden;
-
     picture {
+        top: 0;
+        left: 0;
         width: 100%;
-        padding-top: 5rem;
-        overflow: hidden;
+        height: 100%;
+        position: absolute;
+
+        background: #e2e8f0;
+        display: flex;
+        align-content: center;
+        justify-content: center;
 
         img {
-            object-fit: cover;
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -27,26 +37,12 @@ export const CardProductContent = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
 `
 
 export const CardProductActions = styled.div`
-    height: 15%;
-    justify-content: space-between;
+    opacity: 0;
 `
-
-// button.favorited {
-//     background-color: green;
-// }
-
-// .card-product {
-//     height: 20rem;
-
-//     &__image {
-//         height: 30%;
-//         overflow: hidden;
-
-//         img {
-//             object-fit: cover;
-//         }
-//     }
-// }
